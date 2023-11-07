@@ -1,0 +1,83 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0 auto;
+	text-align: center;
+	/* justify-content: center;
+	align-items: center;
+	min-height: 100vh; */
+}
+
+.todos_wrapper {
+	width: 30%;
+	/* height: auto; */
+	margin: 0 auto;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	border-radius: 20px;
+	box-shadow: 0 15px 10px rgba(0, 0, 0, 0.3);
+	background-color: rgba(150, 76, 77, 0.5);
+}
+
+.todo_wrap {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 50px;
+}
+
+.todo_wrap h1 {
+	font-size: 40px;
+	font-weight: bold;
+	color: lightcoral;
+}
+
+.todo_wrap span {
+	border: none;
+	border-radius: 100%;
+	background-color: white;
+}
+
+.todo_wrap span #icon {
+	font-size: 30px;
+	font-weight: bold;
+	color: lightcoral;
+}
+
+.todos_wrapper #todo_input {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 30 30px 10px 30px;
+}
+
+.todos_wrapper .todo_list ul li {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px;
+	cursor: pointer;
+	line-height: 0;
+}
+
+.todos_wrapper .todo_list ul li #paragraph_todos {
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+}
+
+.todos_wrapper .todo_list ul li #icon-2 {
+	font-size: 20px;
+	font-weight: bold;
+	border-radius: 50%;
+	background-color: white;
+	color: red;
+	visibility: hidden;
+}
+
+.todos_wrapper .todo_list ul li:hover #icon-2 {
+	visibility: visible;
+}
